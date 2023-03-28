@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const slider = [`${process.env.PUBLIC_URL}/img/SL1.jpg`, `${process.env.PUBLIC_URL}/img/SL2.png`, `${process.env.PUBLIC_URL}/img/SL3.jpg`, `${process.env.PUBLIC_URL}/img/SL4.jpg`];
 

@@ -45,7 +45,7 @@ function Footer(props) {
                     <ul className="Footer-Links">
                         <li className="Footer-Link">
                             <div className="Footer-Link-Icon">
-                                <i class="fa-sharp fa-solid fa-phone">
+                                <i className="fa-sharp fa-solid fa-phone">
                                 </i>
                             </div>
                             <p className='Footer-Infor'>
@@ -56,7 +56,7 @@ function Footer(props) {
                     <ul className="Footer-Links">
                         <li className="Footer-Link">
                             <div className="Footer-Link-Icon">
-                                <i class="fa-brands fa-facebook"></i>
+                                <i className="fa-brands fa-facebook"></i>
                             </div>
                             <p className='Footer-Infor'>
                                 <a href="https://www.facebook.com/">
@@ -68,7 +68,7 @@ function Footer(props) {
                     <ul className="Footer-Links">
                         <li className="Footer-Link">
                             <div className="Footer-Link-Icon">
-                                <i class="fa-solid fa-envelope"></i>
+                                <i className="fa-solid fa-envelope"></i>
                             </div>
                             <p className='Footer-Infor'>
                                 <a href="https://mail.google.com/mail/u/0/#inbox">

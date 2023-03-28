@@ -2,19 +2,18 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid #000;
     background-color: rgb(240, 248, 255);
     font-size: 20px;
     font-weight: 500;
     height: 100%;
     width: 100%;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+
 }
 .Frame10-Header{
     text-align: center;
     align-items: center;
     padding: 16px 0;
-    /* margin: auto; */
-    /* flex: 1; */
 }
 .Frame10-Content{
     display: flex;

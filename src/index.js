@@ -18,6 +18,8 @@ import './components/Profile/Profile.css';
 import Home from './components/Home1/Home';
 import './components/Home1/Home.css';
 import Slider from './components/Slider/Slider';
+import './components/Slider/Slider.css';
+
 import Todo from './Todo.js';
 
 
@@ -36,9 +38,9 @@ root.render(
     <Slider />
     {/* <Todo /> */}
     <Home />
-    {/* <EditProfile /> */}
-    {/* <OrderDetail /> */}
-    {/* <Profile /> */}
+    <EditProfile />
+    <OrderDetail />
+    <Profile />
     <Content />
     <Footer />
   </React.StrictMode>

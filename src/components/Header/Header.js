@@ -6,7 +6,6 @@ function Header(props) {
     return (
         <div className="Header">
             <div className="Header-Logo">
-                {/* <i className="fa-brands fa-facebook"></i> */}
                 <img src={logo_icon} alt="logo" className="Header-Logo-Image" />
                 <p className="Logo-Content">{logo_content}</p>
             </div>
