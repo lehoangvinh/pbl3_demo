@@ -1,0 +1,91 @@
+.Header {
+  position: fixed ;
+  margin-top: calc(-1* var(--height-header));
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: var(--backgorund-header);
+  height: var(--height-header);
+  width: 100%;
+  justify-content: space-around;
+  z-index: 2;
+}
+.Header-Logo {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.Header-Logo-Image {
+  justify-content: flex-start;
+  width: var(--height-header);
+  height: var(--height-header);
+  border: 2px solid black;
+  border-bottom: none;
+}
+
+p.Logo-Content {
+  justify-content: flex-end;
+  margin-left: 8px;
+}
+.Header-Navbar {
+  display: flex;
+  margin: 4px 0;
+  justify-content: space-around;
+  height: 100%;
+  min-width: 700px;
+}
+.NavbarItem {
+  display: block;
+  line-height: var(--height-header);
+  margin: 0 16px;
+  height: 100%;
+  width: 100%;
+  /* height: 100%; */
+  padding: 0 10px;
+  /* border: 1px solid black; */
+  margin: 0 16px;
+  cursor: pointer;
+}
+.NavbarItem:hover {
+  background-color: #fa7c06;
+  border-bottom: 4px solid rgb(1, 1, 1);
+}
+.NavbarItem:active {
+  background-color: #fa7c06;
+  border-bottom: 4px solid black;
+}
+.NavbarItem>a{
+  text-decoration: none;
+  color: black;
+}
+.Header-Account {
+  display: flex;
+  justify-content: end;
+  width: auto;
+  /* margin-left: 40px; */
+}
+
+.fa-user,
+.fa-cart-shopping {
+  padding: 0 8px;
+  cursor: pointer;
+}
+.fa-user:hover,
+.fa-cart-shopping:hover {
+  color: var(--color-hover);
+}
+
+@media only screen and (max-width: 977px) {
+  p.Logo-Content {
+    display: none;
+  }
+  .Header-Navbar {
+    min-width: auto;
+  }
+}

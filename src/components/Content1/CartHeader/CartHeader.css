@@ -1,0 +1,18 @@
+/* :root {
+    --backgorund-color: #ceb195;
+    --height-header: 48px;
+    --color-hover: #fd7f00;
+} */
+.CartHeader{
+    width:calc( 55% - 24px);
+    height:  52px;
+    background-color: var(--backgorund-CartHeader);
+    display: flex;
+    justify-content: space-between;
+    color: var(--Cart-Item);
+    font-weight: 700;
+    box-shadow: 6px 4px 4px rgba(0,0,0,0.3) ;
+}
+.CartHeader-Content{
+    margin: auto;
+}

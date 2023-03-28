@@ -1,0 +1,29 @@
+.Frame6{
+    display: flex;
+    border-radius: 15px;
+    width: 100%;
+    height: 60px;
+    background-color: #B0906F;
+    font-size: 24px;
+    font-weight: 500;
+}
+.Frame6-Content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* flex-basis: 33.33%; */
+}
+.Frame-Content-Sub{
+    padding: 4px 0;
+    flex-grow: 1;
+    text-align: center;
+}
+.Frame6-Icon{
+   
+}
+.Frame6-Content>p{
+    border-right: 2px solid black;
+    padding: 8px 16px;
+}

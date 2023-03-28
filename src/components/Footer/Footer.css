@@ -1,0 +1,95 @@
+.Footer{
+    height: 480px;
+    background-color: var(--backgorund-CartHeader);
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+}
+.Footer-First{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 200px;
+    flex-basis: 25%;
+    /* background-color: green ; */
+}
+.Footer-Image{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+.Footer-Title{
+    padding: 8px 0;
+    width: 100%;
+}
+.Footer-Second{
+    display: flex;
+    flex-basis: 25%;
+    /* background-color: red; */
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Footer-Par{
+    margin: auto;
+}
+.Footer-Header{
+    width: 120px;
+    font-weight: 500;
+    margin: auto;
+    padding: 12px 0;
+}
+.Footer-Links{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 120px;
+}
+.Footer-Links:hover{
+    color: var();
+}
+.Footer li{
+    min-width: 120px;
+    padding: 12px 0;
+    font-size:16px;
+}
+.Footer-Link a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.Footer-Third{
+    display: flex;
+    flex-basis: 25%;
+    /* background-color: blue; */
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.Footer-Third-Header{
+    width: auto;
+}
+
+.Footer-Link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    min-width: 250px;
+}
+.Footer-Link-Icon{
+    height: 45px;
+    width: 45px;
+    /* margin-right: 10px; */
+}
+
+.Footer-Link-Icon i{
+    font-size: 45px;
+}
+
+.Footer-Links .Footer-Infor{
+    width: 250px;
+    padding: 12px 16px;
+    font-size:16px;
+}

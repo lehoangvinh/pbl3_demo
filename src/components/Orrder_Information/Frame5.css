@@ -1,0 +1,12 @@
+.Frame5{
+    width: 100%;
+    /* display: flex; */
+    padding: 0 8px;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    width: 100%;
+    overflow: scroll;
+}
+.Frame5-Item{
+    padding: 8px 4px;;
+}

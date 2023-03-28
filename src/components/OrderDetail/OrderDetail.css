@@ -1,0 +1,30 @@
+.OrderDetail{
+    width: var(--size-Content);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.Content-Test{
+    display: grid;
+    grid-template-areas:
+    'left  right'
+    'bottom bottom';
+    grid-gap: 10px;
+    margin: 32px 0;
+    padding: 10px;
+    width: 100%;
+}
+.Content-F7{
+    grid-area: left;
+}
+.Content-F8{
+    grid-area: right;
+}
+.Content-F9{
+    background-color: aliceblue;
+    grid-area: bottom;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}

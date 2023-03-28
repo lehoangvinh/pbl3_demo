@@ -1,0 +1,33 @@
+.ChangeQuantity{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+.add,
+.sub{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    border: 1px solid rgba(74, 61, 61,0.1);
+    cursor: pointer;
+}
+.add:active,
+.sub:active{
+    background-color: rgb(177, 234, 234);
+}
+.Quantity{
+    background-color: black;
+    color:white;
+    font-size: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    border: 1px solid rgba(74, 61, 61,0.1);
+}

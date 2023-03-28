@@ -1,0 +1,17 @@
+.Hero {
+  position: relative;
+  margin-top: var(--height-header);
+  height: 392px;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+  text-align: center;
+  color: white !important;
+}
+.Hero>h1 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  color: white !important;
+}

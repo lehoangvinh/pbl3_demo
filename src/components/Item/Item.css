@@ -1,0 +1,138 @@
+
+
+.Item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  height: 450px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+
+.Item-Image{
+  background-color: rgb(0, 0, 0);
+  width: 270px;
+  height: 310px;
+  flex-shrink: 0;
+  object-fit: contain;
+  
+}
+.Item-Content{
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex:1;
+  width: 100%;
+
+}
+.Item-Content-Detail{
+  width: 100%;
+  flex: 1;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+
+  font-size: 20px;
+  padding: 12px 8px;
+  padding-top: 32px;
+
+}
+.Item-Content-Price{
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 8px;
+  padding-bottom: 32px;
+  margin-top: auto;
+  /* overflow: hidden; */
+}
+
+.Item-Modal {
+}
+
+.Item-Action {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  flex-wrap: column wrap;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.Item:hover .Item-Action{
+  width: 100%;
+  animation: fade_out .3s ease ;
+}
+.Item:hover .Item-Content{
+  display: none;
+}
+
+.Item-Size {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    justify-content: space-around;
+    margin: 32px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+button.Btn{
+  width: 50px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25%;
+  border: none;
+  cursor: pointer;
+}
+button.Btn:hover{
+    background-color: var(--backgorund-CartHeader);
+}
+
+.Item-Button-Main{
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0;
+    margin-bottom: 32px;
+}
+
+button.Item-Button-Buy{
+    border-radius: 15%;
+    height: 40px;
+    padding: 0 8px;
+    width: auto;
+    padding: 4px 8px;
+    padding: 0 16px;
+}
+button.Item-Button-Add{
+    height: 40px;
+    border-radius: 8px;
+    width: auto;
+    padding: 0 16px;
+} 
+@keyframes fade_out{
+  from  {
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+
+}

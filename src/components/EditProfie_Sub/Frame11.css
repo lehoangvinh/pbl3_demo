@@ -1,0 +1,47 @@
+.Frame11 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-style: 20px;
+  font-weight: 500;
+}
+.EditProfile-Content {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  width: 1700px;
+}
+
+.EditProfile-Content-Sub {
+  display: flex;
+  border-bottom: 2px solid #b0906f;
+  justify-content: space-between;
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px 0;
+  flex: 1;
+}
+
+.EditProfile-Content-Sub p {
+  flex: 0 0 200px;
+}
+
+.EditProfile-Content-Sub input {
+  flex: 1;
+  border: none;
+  width: calc(100% - 200px);
+}
+.EditProfile-Button {
+  margin: auto;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.EditProfile-Button-Button{
+  width: 100px;
+  height: 50px;
+  padding: 8px 16px;
+  font-style: 20px;
+  font-weight: 700;
+}

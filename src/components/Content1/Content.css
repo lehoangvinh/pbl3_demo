@@ -1,0 +1,30 @@
+.Content-Cart-Item{
+    /* background-color: blue; */
+    padding-top: 42px;
+    padding-bottom: 12px;;
+}
+.Content{
+    width: var(--size-Content);
+    margin: auto ;
+    height: auto;
+    padding-bottom: 60px;
+}
+.Content-Detail{
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    align-items: center;
+}
+.Content-Frame3{
+    flex-basis: 55%;
+}
+.Content-PayBox{
+    flex-basis: 40%;
+
+}
+.Content-Suggestbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+

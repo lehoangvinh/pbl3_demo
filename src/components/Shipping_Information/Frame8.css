@@ -1,0 +1,39 @@
+.Frame8{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    /* height: 240px; */
+    height: 100%;
+    width: 100%;
+}
+.Frame8-Header{
+    text-align: center;
+    align-items: center;
+    padding: 16px 0;
+    /* margin: auto; */
+    /* flex: 1; */
+}
+.Frame8-Content{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.Frame8-Content-Title{
+    display: flex;
+    padding: 8px 16px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    flex-grow: 1;
+}
+.Frame8-Content-Detail{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px 16px;
+    flex-grow: 3;
+    flex-direction: column;
+}

@@ -1,0 +1,27 @@
+/* .SuggestListBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 0;
+    justify-content: space-between;
+}
+.Suggest_Item{
+    margin: 16px 0;
+} */
+
+/* align-items: start; */
+/* align-items: start; */
+/* flex-basis: 25%; */
+.SuggestListBox{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: minmax(400px,auto);
+    row-gap: 32px;
+    column-gap:32px;
+}
+.Suggest_Item{
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    text-align: center;
+}
+

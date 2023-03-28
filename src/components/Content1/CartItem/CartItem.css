@@ -1,0 +1,32 @@
+.height-30px{
+    min-width: 30px;
+    min-height: 30px;
+}
+.CartItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    font-weight: 500;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+    margin-right: 4px;
+}
+
+.CartItem-ItemHolder{
+    /* background-color: aqua;
+    border: 1px solid #000; */
+    height: 140px;
+    width: 25%;
+    padding: 16px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.CartItem-ItemHolder-Image{
+    /* margin: auto; */
+    background-size: contain;
+    background-repeat: none;
+    width: 90%;
+    height: 100%;
+}
