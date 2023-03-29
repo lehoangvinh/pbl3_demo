@@ -67,15 +67,28 @@ p.Logo-Content {
   display: flex;
   justify-content: end;
   width: auto;
-  /* margin-left: 40px; */
+}
+.Header-Logo,
+.Header-Account>a{
+  text-decoration: none;
+  color: black;
+}
+.Header-Account a>p{
+  padding: 0 8px;
 }
 
+.Header-Account-User{
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
 .fa-user,
 .fa-cart-shopping {
   padding: 0 8px;
   cursor: pointer;
 }
 .fa-user:hover,
+.Header-Account>a:hover,
 .fa-cart-shopping:hover {
   color: var(--color-hover);
 }

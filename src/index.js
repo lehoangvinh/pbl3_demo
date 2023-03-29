@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from "react-router-dom";
+
 import './index.css';
 import './components/Header/Header.css';
 import Header from './components/Header/Header.js';
@@ -19,6 +21,10 @@ import Home from './components/Home1/Home';
 import './components/Home1/Home.css';
 import Slider from './components/Slider/Slider';
 import './components/Slider/Slider.css';
+import Menu from './components/Menu/Menu';
+import './components/Menu/Menu.css';
+import App from './App';
+
 
 import Todo from './Todo.js';
 
@@ -33,16 +39,20 @@ export default DataContext;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <Hero title="CART" />
-    <Slider />
-    {/* <Todo /> */}
-    <Home />
-    <EditProfile />
-    <OrderDetail />
-    <Profile />
-    <Content />
-    <Footer />
+    <BrowserRouter>
+      {/* <Header /> */}
+      {/* <Hero title="CART" /> */}
+      {/* <Slider /> */}
+      {/* <Todo /> */}
+      {/* <Home /> */}
+      {/* <Menu /> */}
+      {/* <EditProfile /> */}
+      {/* <OrderDetail /> */}
+      {/* <Profile /> */}
+      {/* <Content /> */}
+      {/* <Footer /> */}
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

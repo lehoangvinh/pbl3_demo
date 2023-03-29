@@ -3,7 +3,7 @@ import React from "react";
 function Box3_Contact(props) {
     return (
         <div className="Box3_Contact">
-            <div className="Box3_Contact-Title">
+            <div className="Box3_Contact-Title" id='contact'>
                 <h2>CONTACT US</h2>
             </div>
 
@@ -25,8 +25,6 @@ function Box3_Contact(props) {
                 <div className="Box3_Contact-Third BG">
                     <i className="fa-solid fa-map-location-dot Box3_Contact_Icon"></i>
                     <p>54 Nguyễn Lương Bằng, Hòa Khánh Bắc, Liên Chiểu, Đà Nẵng</p>
-                    {/* <p>09999988899</p>
-                    <p>09999988899</p> */}
                 </div>
             </div>
         </div>

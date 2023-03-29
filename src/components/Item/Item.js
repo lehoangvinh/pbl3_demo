@@ -88,31 +88,31 @@ function Item(props) {
                     </p>
                 </div>
             </div>
-            <div class="Item-Action">
-                <div class="Item-Size">
+            <div className="Item-Action">
+                <div className="Item-Size">
                     <p>Size: </p>
-                    <button type="button" class="Btn Item-Button-Size"
+                    <button type="button" className="Btn Item-Button-Size"
                         onClick={() => {
                             const content = document.getElementsByClassName('Item-Button-Size');
                             alert(content[0].textContent)
                             console.log(content);
                         }}
                     >S</button>
-                    <button type="button" class="Btn Item-Button-Size"
+                    <button type="button" className="Btn Item-Button-Size"
                         onClick={() => {
                             const content = document.getElementsByClassName('Item-Button-Size');
                             alert(content[0].textContent)
                             console.log(content);
                         }}
                     >M</button>
-                    <button type="button" class="Btn Item-Button-Size"
+                    <button type="button" className="Btn Item-Button-Size"
                         onClick={() => {
                             const content = document.getElementsByClassName('Item-Button-Size');
                             alert(content[0].textContent)
                             console.log(content);
                         }}
                     >L</button>
-                    <button type="button" class="Btn Item-Button-Size"
+                    <button type="button" className="Btn Item-Button-Size"
                         onClick={() => {
                             const content = document.getElementsByClassName('Item-Button-Size');
                             alert(content[0].textContent)
@@ -120,15 +120,15 @@ function Item(props) {
                         }}
                     >XL</button>
                 </div>
-                <div class="Item-Button-Main">
-                    <button type="button" class="Btn Item-Button-Buy"
+                <div className="Item-Button-Main">
+                    <button type="button" className="Btn Item-Button-Buy"
                         onClick={() => {
                             const content = document.getElementsByClassName('Item-Button-Buy');
                             alert(content[0].textContent + " thành công")
                             console.log(content);
                         }}
                     >Mua</button>
-                    <button type="button" class="Btn Item-Button-Add"
+                    <button type="button" className="Btn Item-Button-Add"
                         onClick={() => {
                             const content = document.getElementsByClassName('Item-Button-Add');
                             alert(content[0].textContent + " thành công")
@@ -136,7 +136,7 @@ function Item(props) {
                     >Thêm vào giỏ hàng</button>
                 </div>
             </div>
-        </div>
+        </div >
         // </div >
     );
 }

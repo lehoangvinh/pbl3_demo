@@ -9,51 +9,14 @@ const kemlyUrl = `${process.env.PUBLIC_URL}/img/milo.png`;
 function SuggestListBox(props) {
     return (
         <div className="SuggestListBox">
-            <div className="Suggest_Item">
-                <Item linkURL={cafe_denUrl} detail="Trà sữa" />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={bacxiuUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={cafe_suaUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={kemlyUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={cafe_denUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={bacxiuUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={cafe_suaUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={kemlyUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={cafe_suaUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={kemlyUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={kemlyUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={kemlyUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={kemlyUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={kemlyUrl} />
-            </div>
-            <div className="Suggest_Item">
-                <Item linkURL={kemlyUrl} />
-            </div>
+            {
+                props.API.slice(0, 19).map((item) => (
+                    <div className="Suggest_Item" key={item.id}>
+                        <Item linkURL={item.url} detail={item.albumId} />
+                    </div>
+
+                ))
+            }
         </div>
     );
 }

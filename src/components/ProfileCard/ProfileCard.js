@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const avatarURL = `${process.env.PUBLIC_URL}/img/avatarUser.png`;
 
@@ -18,10 +19,10 @@ function ProfileCard(props) {
                 <p>
                     {email}
                 </p>
-                <button onClick={() => {
-                    alert('Profile')
-                }}>
-                    EditProfile
+                <button >
+                    <Link to='/editprofile'>
+                        EditProfile
+                    </Link>
                 </button>
             </div>
         </div >

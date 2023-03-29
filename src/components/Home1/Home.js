@@ -1,4 +1,13 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom'
+
+
+import Header from '../Header/Header.js';
+import '../Header/Header.css';
+import Slider from '../Slider/Slider.js';
+import '../Slider/Slider.css';
+import Footer from '../Footer/Footer.js';
+import '../Footer/Footer.css';
 import AboutUs from '../AboutUs/AboutUs';
 import '../AboutUs/AboutUs.css';
 import Box3 from '../Box3/Box3';
@@ -36,6 +45,8 @@ const users = [
 function Home(props) {
     return (
         <>
+            <Header name="Lê Hoàng Vinh" />
+            <Slider />
             <div className='Home'>
                 <div className='Home-AboutUs'>
                     <AboutUs />
@@ -50,7 +61,7 @@ function Home(props) {
                     <Box3_Contact />
                 </div>
             </div>
-
+            <Footer />
         </>
     );
 }
