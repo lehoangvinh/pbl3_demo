@@ -1,18 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const logo_icon = `${process.env.PUBLIC_URL}/img/logo.jpg`;
 
 var logo_content = "DUT MILK TEA";
 function Header(props) {
     return (
         <div className="Header">
-            <div className="Header-Logo">
-                {/* <i className="fa-brands fa-facebook"></i> */}
-                <img src={logo_icon} alt="logo" className="Header-Logo-Image" />
-                <p className="Logo-Content">{logo_content}</p>
+            <div>
+                <a href='/cart' className="Header-Logo" >
+                    <img src={logo_icon} alt="logo" className="Header-Logo-Image" />
+                    <p className="Logo-Content">{logo_content}</p>
+                </a>
             </div>
             <div className='Header-Navbar'>
                 <div className='NavbarItem'>
-                    <a href='Home'>
+                    <a href='/'>
                         HOME</a>
                 </div>
                 <div className='NavbarItem'>
@@ -21,19 +23,25 @@ function Header(props) {
                     </a>
                 </div>
                 <div className='NavbarItem'>
-                    <a href='Menu'>
+                    <Link to='menu'>
                         MENU
-                    </a>
+                    </Link>
                 </div>
                 <div className='NavbarItem'>
-                    <a href='Contact'>
+                    <a href='#contact'>
                         CONTACT
                     </a>
                 </div>
+
             </div>
             <div className="Header-Account">
-                <i className="fa-regular fa-user"></i>
-                <i className="fa-solid fa-cart-shopping"></i>
+                <Link to='/profile' className='Header-Account-User'>
+                    <p>Hi, {props.name}</p>
+                    <i className="fa-regular fa-user" ></i>
+                </Link>
+                <Link to='/'>
+                    <i className="fa-solid fa-cart-shopping"></i>
+                </Link>
 
             </div>
         </div >

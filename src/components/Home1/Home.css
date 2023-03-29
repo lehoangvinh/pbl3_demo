@@ -3,5 +3,15 @@
     width: var(--size-Content);
     /* background: #d15656; */
     align-items: center;
-    margin: 32px auto;
+    margin: 0 auto;
+    flex-direction: column;
+    
+}
+
+.Home-AboutUs{
+    margin: 16px 0;
+}
+.Home-Box3{
+    margin: 32px 0;
+    width: 100%;
 }

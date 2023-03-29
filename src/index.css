@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(216, 197, 172);
+  background-color: #D9D9D9 !important;
 }
 
 code {
@@ -21,7 +21,6 @@ code {
   padding: 0;
   
 }
-p{margin-bottom: 0 !important;}
 /* Common */
 .margin-auto{
   margin:auto;
@@ -33,5 +32,5 @@ p{margin-bottom: 0 !important;}
   --height-header: 48px;
   --color-hover: #fd7f00;
   --Cart-Item:white;
-  --size-Content:65%;
+  --size-Content:70%;
 }

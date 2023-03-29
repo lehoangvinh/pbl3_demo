@@ -1,0 +1,56 @@
+.MenuBar{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'first second';
+    font-size: 20px;
+    font-weight: 500;
+    background-color:aliceblue;
+}
+.Menu_Selected>p{
+    padding: 16px 0;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+}
+.MenuBar-Left{
+    grid-area: 'first';
+    display: flex;
+    margin-left: 100px;
+}
+.Menu_Selected{
+    margin: 8px 16px 0;
+}
+.Menu_Selected:active{
+    border-bottom: 4px solid #000;
+    margin: 8px 16px 0;
+}
+.MenuBar-Right{
+    grid-area: 'second';
+    display: flex;
+    line-height: 100%;
+    align-items: center;
+    background-color: aliceblue;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.MenuBar-Right-Boder{
+    display: flex;
+    line-height: 100%;
+    align-items: center;
+    padding: 16px 0;
+    justify-content: right;
+}
+.MenuBar-Search{
+    cursor: pointer;
+    padding: 0 16px;
+    margin: 0 32px ;
+}
+.MenuBar-Right-Boder>input{
+    border-radius: 25px;
+}
+.MenuBar-Right>input{
+    width: 70%;
+}

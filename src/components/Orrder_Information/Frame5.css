@@ -5,7 +5,9 @@
     /* flex-direction: column; */
     /* justify-content: space-around; */
     width: 100%;
-    overflow: scroll;
+    /* overflow: scroll; */
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+
 }
 .Frame5-Item{
     padding: 8px 4px;;

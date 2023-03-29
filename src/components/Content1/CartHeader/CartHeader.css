@@ -4,7 +4,7 @@
     --color-hover: #fd7f00;
 } */
 .CartHeader{
-    width:calc( 55% - 24px);
+    width:calc( 60% - 24px);
     height:  52px;
     background-color: var(--backgorund-CartHeader);
     display: flex;

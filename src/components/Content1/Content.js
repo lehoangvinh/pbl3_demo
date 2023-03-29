@@ -1,4 +1,12 @@
 import React from "react";
+
+import Header from '../Header/Header.js';
+import '../Header/Header.css';
+import Hero from '../Hero/Hero.js';
+import '../Hero/Hero.css';
+import Footer from '../Footer/Footer.js';
+import '../Footer/Footer.css';
+
 import "./CartHeader/CartHeader.css";
 import CartItem from "./CartHeader/CartHeader.js";
 import "./Frame3/Frame3.css";
@@ -7,6 +15,8 @@ import "./PayBox/PayBox.css";
 import PayBox from "./PayBox/PayBox.js";
 import "./SuggestBox/SuggestBox.css";
 import SuggestBox from "./SuggestBox/SuggestBox.js";
+
+
 
 
 import { useState, useEffect } from "react";
@@ -23,22 +33,25 @@ function Content(props) {
     }, []);
 
     return (
-        <div className="Content">
-            <div className="Content-Cart-Item">
-                <CartItem />
-            </div>
-            <div className="Content-Detail">
-                <div className="Content-Frame3">
-                    <Frame3 items={data} />
+        <>
+            <Header />
+            <Hero title="CART" />
+            <div className="Content">
+                <div className="Content-Cart-Item">
+                    <CartItem />
                 </div>
-                <div className="Content-PayBox">
-                    <PayBox items={data} />
+                <div className="Content-Detail">
+                    <div className="Content-Frame3">
+                        <Frame3 items={data} />
+                    </div>
+                    <div className="Content-PayBox">
+                        <PayBox items={data} />
+                    </div>
                 </div>
+                <SuggestBox className="Content-Suggestbox" />
             </div>
-            <SuggestBox className="Content-Suggestbox" />
-
-
-        </div>
+            <Footer />
+        </>
     );
 }
 

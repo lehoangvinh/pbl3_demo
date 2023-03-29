@@ -13,10 +13,11 @@
 /* flex-basis: 25%; */
 .SuggestListBox{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto ;
     grid-auto-rows: minmax(400px,auto);
     row-gap: 32px;
     column-gap:32px;
+    margin-bottom: 32px;
 }
 .Suggest_Item{
     width: 100%;
