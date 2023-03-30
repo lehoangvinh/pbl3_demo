@@ -26,14 +26,14 @@ function Content(props) {
     const [subtitle, setSubTitle] = useState(0)
     const [totalFee, setTotalFee] = useState()
 
-    const hanldleSetSubTitle = (arrs) => {
-        arrs.reduce((acc, cur) => {
-            return acc + cur
-        }, 0)
-    }
-    setSubTitle(() => {
-        // hanldleSetSubTitle
-    })
+    // const hanldleSetSubTitle = (arrs) => {
+    //     arrs.reduce((acc, cur) => {
+    //         return acc + cur
+    //     }, 0)
+    // }
+    // setSubTitle(() => {
+    //     // hanldleSetSubTitle
+    // })
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/photos')
@@ -59,7 +59,7 @@ function Content(props) {
                     <div className="Content-Frame3">
                         <Frame3
                             API={items}
-                            hanldleSetSubTitle={hanldleSetSubTitle}
+                        // hanldleSetSubTitle={hanldleSetSubTitle}
                         />
                     </div>
                     <div className="Content-PayBox">
