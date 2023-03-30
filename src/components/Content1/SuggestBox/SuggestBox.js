@@ -8,7 +8,7 @@ function SuggestBox(props) {
                 Suggest For You
             </div>
             <div>
-                <SuggestListBox />
+                <SuggestListBox API={props.items} />
             </div>
         </div>
     );

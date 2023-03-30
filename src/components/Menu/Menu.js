@@ -20,6 +20,9 @@ import { useState, useEffect } from 'react';
 
 function Menu(props) {
     const [title, setTitle] = useState('All')
+    const [drinks, setDrinks] = useState(0)
+    const [foods, setFoods] = useState(0)
+
     const [items, setItems] = useState([])
 
     useEffect(() => {
@@ -40,7 +43,6 @@ function Menu(props) {
     }
     return (
         <>
-            <Header />
             <Slider />
             <div className='Menu'>
                 <MenuBar />
@@ -65,7 +67,6 @@ function Menu(props) {
                 <Box3_Contact />
             </div>
 
-            <Footer />
         </>
     );
 }

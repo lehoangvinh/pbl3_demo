@@ -12,12 +12,10 @@ import Frame11 from "../EditProfie_Sub/Frame11.js";
 function EditProfile(props) {
     return (
         <>
-            <Header />
             <Hero title="EDIT PROFILE" />
             <div className='EditProfile'>
                 <Frame11 />
             </div>
-            <Footer />
         </>
     );
 }

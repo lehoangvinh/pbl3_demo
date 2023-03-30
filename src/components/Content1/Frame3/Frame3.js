@@ -5,11 +5,14 @@ function Frame3(props) {
     return (
         <div className='Frame3'>
 
-            {props.items.map(item => (
+            {props.API.slice(0, 9).map(item => (
                 <div key={item.id}>
-                    <CartItem itemName={item.id} itemPrice={item.id} itemQuantity={item.id} itemSize={item.id} />
+                    <CartItem linkImg={item.url} itemName={item.title} itemPrice={item.albumId} itemQuantity={item.albumId} itemSize={item.albumId} />
                 </div>
             ))}
+            {
+                props.hanldleSetSubTitle(props.API.slice(0, 9))
+            }
 
         </div>
     );

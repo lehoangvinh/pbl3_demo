@@ -22,10 +22,11 @@ function PayBox(props) {
 
                 </div>
                 <div className='PayBox-Content-Price'>
-                    <p className='PayBox-Content-Item'>100000 đ</p>
-                    <p className='PayBox-Content-Item'>100000 đ</p>
-                    <p className='PayBox-Content-Item'>100000 đ</p>
-                    <p className='PayBox-Content-Item'>100000 đ</p>
+
+                    <p className='PayBox-Content-Item'>{props.subtitle} đ</p>
+                    <p className='PayBox-Content-Item'>{props.subtitle} đ</p>
+                    <p className='PayBox-Content-Item'>{props.subtitle} đ</p>
+                    <p className='PayBox-Content-Item'>{props.subtitle} đ</p>
 
                 </div>
             </div>

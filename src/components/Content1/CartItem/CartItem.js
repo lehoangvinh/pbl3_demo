@@ -2,14 +2,13 @@ import React from 'react';
 import ChangeQuantity from '../ChangeQuantity/ChangeQuantity';
 import '../ChangeQuantity/ChangeQuantity.css'
 
-const item = `${process.env.PUBLIC_URL}/img/cafe_den.png`;
 
 
 function CartItem(props) {
     return (
         <div className='CartItem'>
             <div className='CartItem-ItemHolder'>
-                <img src={item} alt='item' className='CartItem-ItemHolder-Image margin-auto' />
+                <img src={props.linkImg} alt='item' className='CartItem-ItemHolder-Image margin-auto' />
             </div>
             <div className='CartItem-ItemHolder'>
                 <p className='margin-auto'>
