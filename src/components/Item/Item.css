@@ -74,7 +74,7 @@
 }
 .Item:hover .Item-Action{
   width: 100%;
-  animation: fade_out .3s ease ;
+  animation: fade_out .7s ease ;
 }
 .Item:hover .Item-Content{
   display: none;

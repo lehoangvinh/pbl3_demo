@@ -8,7 +8,7 @@ import Footer from '../Footer/Footer.js';
 import '../Footer/Footer.css';
 
 import "./CartHeader/CartHeader.css";
-import CartItem from "./CartHeader/CartHeader.js";
+import CartHeader from "./CartHeader/CartHeader.js";
 import "./Frame3/Frame3.css";
 import Frame3 from "./Frame3/Frame3.js";
 import "./PayBox/PayBox.css";
@@ -22,35 +22,48 @@ import SuggestBox from "./SuggestBox/SuggestBox.js";
 import { useState, useEffect } from "react";
 
 function Content(props) {
-    const [data, setData] = useState([]);
+    const [items, setItems] = useState([])
+    const [subtitle, setSubTitle] = useState(0)
+    const [totalFee, setTotalFee] = useState()
 
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/posts")
-            .then((response) => response.json())
-            .then((data) => setData(data))
-            .catch((error) => console.log(error));
-        console.log(data);
-    }, []);
+        fetch('https://jsonplaceholder.typicode.com/photos')
+            .then(response => response.json())
+            .then(
+                json => {
+                    console.log(json)
+                    setItems(json)
+                }
+            )
+        return
+    }, [])
+
 
     return (
         <>
-            <Header />
             <Hero title="CART" />
             <div className="Content">
                 <div className="Content-Cart-Item">
-                    <CartItem />
+                    <CartHeader />
                 </div>
                 <div className="Content-Detail">
                     <div className="Content-Frame3">
-                        <Frame3 items={data} />
+                        <Frame3
+                            API={items}
+                        // hanldleSetSubTitle={hanldleSetSubTitle}
+                        />
                     </div>
                     <div className="Content-PayBox">
-                        <PayBox items={data} />
+                        <PayBox
+                            items={items}
+                            subtitle={subtitle}
+                            totalFee={totalFee}
+                            discount='100000'
+                        />
                     </div>
                 </div>
-                <SuggestBox className="Content-Suggestbox" />
+                <SuggestBox className="Content-Suggestbox" items={items} />
             </div>
-            <Footer />
         </>
     );
 }

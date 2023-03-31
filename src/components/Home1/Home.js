@@ -42,26 +42,26 @@ const users = [
 
 ]
 
+
 function Home(props) {
+
     return (
         <>
-            <Header name="Lê Hoàng Vinh" />
             <Slider />
             <div className='Home'>
-                <div className='Home-AboutUs'>
+                <div className='Home-AboutUs' id='about'>
                     <AboutUs />
                 </div>
-                <div className='Our-Service Home-Box3'>
+                <div className='Our-Service Home-Box3' id='service'>
                     <Box3 title="OUR SERVICE" users={users} />
                 </div>
-                <div className='Our-Service Home-Box3'>
+                <div className='Our-Service Home-Box3' id='team'>
                     <Box3 title="OUR TEAM" users={users} />
                 </div>
-                <div className='Our-Service Home-Box3'>
+                <div className='Our-Service Home-Box3' style={{ marginBottom: 0 }}>
                     <Box3_Contact />
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

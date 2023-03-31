@@ -83,7 +83,8 @@ p.Logo-Content {
   padding: 0 8px;
 }
 .fa-user,
-.fa-cart-shopping {
+.fa-cart-shopping,
+.fa-right-from-bracket {
   padding: 0 8px;
   cursor: pointer;
 }

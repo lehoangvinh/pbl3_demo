@@ -44,4 +44,9 @@
   padding: 8px 16px;
   font-style: 20px;
   font-weight: 700;
+  border-radius: 10px;
+}
+.EditProfile-Button-Button>a{
+  color: black;
+  text-decoration: none;
 }

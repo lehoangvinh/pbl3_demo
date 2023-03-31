@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function ChangeQuantity(props) {
 
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(props.quantity)
 
     const increaseCounter = () => {
         setCounter(preState => preState + 1)

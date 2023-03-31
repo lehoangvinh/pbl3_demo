@@ -1,5 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 const footer_logo = `${process.env.PUBLIC_URL}/img/footer-image.png`;
+
+function scrollToElement(selector) {
+    var element = document.querySelector(selector);
+
+    element !== null ? element.scrollIntoView({ behavior: "smooth" }) : window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+}
 
 function Footer(props) {
     return (
@@ -17,22 +25,23 @@ function Footer(props) {
                     <p className="Footer-Header">QUICK LINK</p>
                     <ul className="Footer-Links">
                         <li className="Footer-Link">
-                            <a href="Home">Home</a>
+                            <Link to='/' onClick={() => scrollToElement("#")}>
+                                HOME</Link>
                         </li>
-                        <li className="Footer-Link">
-                            <a href="About">About</a>
+                        <li className="Footer-Link" onClick={() => scrollToElement("#about")}>
+                            About
                         </li>
-                        <li className="Footer-Link">
-                            <a href="Our-Service">Our Service</a>
+                        <li className="Footer-Link" onClick={() => scrollToElement("#service")}>
+                            Our Service
                         </li>
-                        <li className="Footer-Link">
-                            <a href="Our-Produce">Our Produce</a>
+                        <li className="Footer-Link" onClick={() => scrollToElement("#produce")}>
+                            Our Produce
                         </li>
-                        <li className="Footer-Link">
-                            <a href="Our-Team">Our Team</a>
+                        <li className="Footer-Link" onClick={() => scrollToElement("#team")}>
+                            Our Team
                         </li>
-                        <li className="Footer-Link">
-                            <a href="Contact">Contact</a>
+                        <li className="Footer-Link" onClick={() => scrollToElement("#contact")}>
+                            Contact
                         </li>
                     </ul>
                 </div>

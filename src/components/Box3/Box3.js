@@ -18,7 +18,7 @@ function Box3(props) {
                     </div>
                 </div>
 
-                <div className="Box3-Content">
+                <div className="Box3-Content" >
                     <div className="Box3-Content-Image">
                         <img src={users[1].image} alt="avatar" style={{ maxWidth: "100%", maxHeight: "100%", backgroundSize: 'cover' }} />
                     </div>

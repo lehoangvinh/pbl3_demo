@@ -17,7 +17,6 @@ import Frame8 from "../Shipping_Information/Frame8.js";
 function Profile(props) {
     return (
         <>
-            <Header />
             <Hero title="PROFILE" />
             <div className='Profile'>
                 <div className="Profile-Section">
@@ -32,7 +31,6 @@ function Profile(props) {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 }
