@@ -2,30 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
 
+// import CSS
 import './index.css';
 import './components/Header/Header.css';
-import Header from './components/Header/Header.js';
 import './components/Hero/Hero.css';
-import Hero from './components/Hero/Hero.js';
 import './components/Content1/Content.css';
-import Content from './components/Content1/Content.js';
 import './components/Footer/Footer.css';
-import Footer from './components/Footer/Footer.js';
-import OrderDetail from './components/OrderDetail/OrderDetail.js';
 import './components/OrderDetail/OrderDetail.css';
-import EditProfile from './components/EditProfile/EditProfile';
 import './components/EditProfile/EditProfile.css';
-import Profile from './components/Profile/Profile';
 import './components/Profile/Profile.css';
-import Home from './components/Home1/Home';
 import './components/Home1/Home.css';
-import Slider from './components/Slider/Slider';
 import './components/Slider/Slider.css';
-import Menu from './components/Menu/Menu';
 import './components/Menu/Menu.css';
+import "./components/Shipping_Information/Frame8.css";
+import "./components/Order_Item/Frame9.css";
+import "./components/Order_Summary/Frame10.css";
+// end import CSS
 import App from './App';
-
-
 import Todo from './Todo.js';
 
 

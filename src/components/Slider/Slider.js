@@ -13,7 +13,9 @@ function Slider(props) {
     return (
         <div>
 
-            <Carousel activeIndex={index} onSelect={handleSelect} style={{ marginTop: 'var(--height-header)' }}>
+            <Carousel activeIndex={index} onSelect={handleSelect} style={{
+                marginTop: 'var(--height-header)'
+            }}>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"

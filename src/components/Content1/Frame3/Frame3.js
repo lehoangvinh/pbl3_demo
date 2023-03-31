@@ -11,7 +11,7 @@ function Frame3(props) {
                 </div>
             ))}
             {
-                props.hanldleSetSubTitle(props.API.slice(0, 9))
+                // props.hanldleSetSubTitle(props.API.slice(0, 9))
             }
 
         </div>

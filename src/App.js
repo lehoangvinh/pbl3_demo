@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Home from './components/Home1/Home';
@@ -9,16 +9,24 @@ import Content from './components/Content1/Content';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
+
 const item = `${process.env.PUBLIC_URL}/img/cafe_den.png`;
 
 
 function App(props) {
+    const [active, setActive] = useState(true)
+
+    const handleActive = (act) => {
+        setActive(act);
+    }
+
+
     return (
         <div>
-            < Header name="Lê Hoàng Vinh" />
+            < Header handleActive={handleActive} active={active} name="Lê Hoàng Vinh" />
             <Routes>
                 <Route path="/" element={<Home />}>
-                    <Route to="/about" />
+                    {/* <Route to="/about" /> */}
                 </Route>
                 <Route path="/menu" element={<Menu />}>  </Route>
                 <Route path="/profile" element={<Profile />}>  </Route>

@@ -1,49 +1,64 @@
-.Box3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
-    width: 100%;
+.Box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
 }
-.Box3-Title{
-    text-align: center;
-    margin: 16px 0;
-    padding-bottom: 16px;
+.Box3-Title {
+  text-align: center;
+  margin: 16px 0;
+  padding-bottom: 16px;
 }
-.Box3-Par{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.Box3-Par {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.Box3-Content{
-    display: flex;
-    flex-basis: 30%;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
+.Box3-Content {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
-
-}   
-
-.Box3-Content-Image{
-    width: 100%;
-    height: 300px;
-    background-color: black;
-    object-fit: cover;
-    margin: auto  ;
-    display: flex;
 }
-.Box3-Content-Image>img{
-    margin: auto;
+.Box3-Content:hover .Box3-Content-Image {
+  background-color: rgb(231, 175, 52);
+  /* height: 110%; */
+  align-items: center;
+  animation: image_animation ease 2s;
 }
 
-.Box3-Content-Name{
-    width: 100%;
-    height: 150px;
-    background-color: aliceblue;
-    display: flex;
-    margin: auto;
+.Box3-Content-Image {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  object-fit: cover;
+  margin: auto;
+  display: flex;
+}
+.Box3-Content-Image > img {
+  margin: auto;
+}
 
+.Box3-Content-Name {
+  width: 100%;
+  height: 150px;
+  background-color: aliceblue;
+  display: flex;
+  margin: auto;
+}
+
+@keyframes image_animation {
+  from {
+    height: 100%;
+    opacity: 0.5;
+  }
+  to {
+    height: 110%;
+    opacity: 1;
+  }
 }

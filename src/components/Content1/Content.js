@@ -26,15 +26,6 @@ function Content(props) {
     const [subtitle, setSubTitle] = useState(0)
     const [totalFee, setTotalFee] = useState()
 
-    // const hanldleSetSubTitle = (arrs) => {
-    //     arrs.reduce((acc, cur) => {
-    //         return acc + cur
-    //     }, 0)
-    // }
-    // setSubTitle(() => {
-    //     // hanldleSetSubTitle
-    // })
-
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/photos')
             .then(response => response.json())

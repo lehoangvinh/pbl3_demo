@@ -45,6 +45,7 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     width: 120px;
+    cursor: pointer;
 }
 .Footer-Links:hover{
     color: var();
